@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adianti Template IV</title>
+    <meta charset="utf-8">
+    <link rel="manifest" href="manifest.json?appver=700">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    {LIBRARIES}
+    {HEAD}
+    
+    <link href="app/templates/{template}/plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="app/templates/{template}/plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="app/templates/{template}/css/style.css" rel="stylesheet">
+    <link href="app/templates/{template}/css/themes/all-themes.css" rel="stylesheet" />
+    <link href="app/lib/include/admin.min.css?appver=700" rel="stylesheet" type="text/css" media="screen">
+    <link href="app/templates/{template}/css/main.css" rel="stylesheet">
+    <link href="app/templates/{template}/css/util.css" rel="stylesheet">
+   
+    <style> 
+                
+     
+     .container{    
+     padding: 0px;
+     margin:0px;     
+     }
+     
+     .row{
+     padding: 0px;
+     margin:0px;
+     }
+     
+     .col-7 {
+     padding: 0px;
+     margin:0px;
+     
+     }
+     
+      .col-1 {
+     padding: 0px;
+     margin:0px;
+     }
+     
+     .col-4 {
+     padding: 0px;
+     margin:0px;
+     }  
+     
+     
+        
+        .container-login-adianti{
+              width: 100%;  
+              min-height: 100vh;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              padding: 15px;
+            
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              position: relative;
+              z-index: 1;  
+            }
+        
+        .login100-form-title-adianti {
+          font-family: Poppins-Bold;
+          font-size: 36px;
+          color: #ffffff;
+          line-height: 1.2;
+          text-align: center;        
+          width: 100%;
+          display: block;
+          padding-bottom: 54px;
+        }
+        
+        .login100-title-adianti {
+          font-family: Poppins-Bold;
+          font-size: 36px;
+          color: #66b864;
+          line-height: 1.2;
+          text-align: center;        
+          width: 100%;
+          display: block;
+          margin-top: 70px;
+        }
+        
+        
+        
+     .login100-form-p-adianti{
+        font-family: Poppins-Regular;
+    	font-size: 14px;
+    	line-height: 1.7;
+    	color: #ffffff;
+    	margin: 0px;
+     }   
+     
+     .login100-form-botao-adianti{
+          font-family: Poppins-Bold;
+          font-size: 12px;
+          color: #ffffff;
+          line-height: 1.2;
+          text-align: center;        
+          width: 100%;
+          display: block;
+
+        }
+      
+      .alert{
+          opacity: 0.8;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+        <!-- Page Loader -->
+        <div class="page-loader-wrapper">
+            <div class="loader">
+                <div class="preloader">
+                    <div class="spinner-layer pl-indigo">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <p>Carregando...</p>
+            </div>
+        </div>
+
+        
+        <div class="container"> 
+            <div class="row">
+                <div class="col-7">
+                    <div class="container-login-adianti" style="background-image: url('app/templates/{template}/images/bg-01.jpg');">
+                       <div class="alert alert-success" role="alert">
+                            <span class="login100-form-title-adianti">
+                                        Welcome Back!
+                                <p class="login100-form-p-adianti">To keep connected with us</p>
+                                <p class="login100-form-p-adianti">please login with personal info</p>
+                                <p>&nbsp;</p>
+                                <button type="button" class="btn btn-dark" style ="height: 30px;width: 30%;display: block;margin: auto;"><!--[CREATE-ACCOUNT]--> <a href="index.php?class=SystemRegistrationForm"><i aria-hidden="true"></i><p class="login100-form-botao-adianti"> _t{Create account}</p></a> <!--[/CREATE-ACCOUNT]--></button>
+                            </span> 
+                        </div>                       
+				    </div> 		             
+                </div> 
+                <div class="col-1"></div>
+                <div class="col-4"> 
+                    
+                    <!-- #END# Page Loader -->                
+                        <div id="wrapper" style="width:90%;margin:auto;margin-top:10px">
+                         
+                            <!-- Navigation -->
+                            <span class="login100-title-adianti">
+						             Login Adianti
+        					</span>	  
+                            <div id="adianti_div_content"></div>
+                            <div id="adianti_online_content"></div>
+                            <div id="adianti_online_content2"></div>
+                            
+                        </div>
+                        <div style="text-align:center">
+                          
+                            <!--[RESET-PASSWORD]--> <a href="index.php?class=SystemRequestPasswordResetForm"><i class="fa fa-eraser green" aria-hidden="true"></i> _t{Reset password}</a> <!--[/RESET-PASSWORD]-->
+                        </div>
+                        
+                        
+                        <a class="little-float-button bg-orange" title="PHP Modules" href="index.php?class=SystemModulesCheckView" style="pointer-events: auto;">
+                            <i class="fa fa-cog internal-float-button"></i>
+                        </a>
+                        
+                        <!-- /#wrapper -->
+                    
+                </div> 
+            </div>        
+        </div>
+                     
+        
+         
+         
+         
+        
+        
+        
+        <script src="app/templates/{template}/js/admin-login.js"></script>
+    </body>
+</html>
