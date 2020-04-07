@@ -30,12 +30,12 @@ app/templates/theme4/images
 ####################################
 
 Formulário de cadastro
-app/control/SystemRegistrationForm
+app/control/admin/SystemRegistrationForm
 
 ####################################
 
 Formulário de cadastro
-app/control/SystemRequestPasswordResetForm
+app/control/admin/SystemRequestPasswordResetForm
 
 
 
